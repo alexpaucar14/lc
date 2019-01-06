@@ -1,0 +1,62 @@
+﻿@{
+    var lnombreCntrolador = ViewContext.RouteData.Values["controller"];
+}
+<header id="header" class="header">
+    <div class="menu">
+        <nav id="menu-1" class="mega-menu ">
+            <section class="menu-list-items">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                            <ul class="menu-logo">
+                                <li class="head-info"> <a href="/"> <img id="logo_img" src="@Url.Content("~/Images/logo.png")" alt="logo"> </a> </li>
+                            </ul>
+                            <ul class="menu-links">
+                                <li>
+                                    <a class="menu-style menu-li-a @(lnombreCntrolador.Equals("Home") ? "active" : string.Empty)" href="@Url.Action("Index", "Home")"> INICIO <i class="fa fa-indicator"></i></a>
+                                </li>
+                                <li> <a class="menu-style menu-li-a @(lnombreCntrolador.Equals("Promociones") ? "active" : string.Empty)" href="@Url.Action("Index", "Promociones")"> PROMOCIONES</a></li>
+                                <li><a class="menu-style menu-li-a @(lnombreCntrolador.Equals("Eventos") ? "class=nav-active" : string.Empty)" href="@Url.Action("Index", "Eventos")"> EVENTOS </a></li>
+                                <li>
+                                    <a class="menu-style menu-li-a @(lnombreCntrolador.Equals("Opciones") ? "-active" : string.Empty)" href="javascript:void(0)"> OPCIONES <i class="fa fa-angle-down fa-indicator"></i></a>
+                                    <ul class="drop-down-multilevel">
+                                        <li>
+                                            <a class="menu-li-a-drop" href="javascript:void(0)">ARQUEO CAJA<i class="fa fa-angle-right fa-indicator"></i></a>
+                                            <ul class="drop-down-multilevel left-side effect-fade">
+                                                <li><a class="menu-li-a-drop" href="@Url.Action("Index", "Promociones")">ARQUEO DIARIOS</a></li>
+                                                <li><a class="menu-li-a-drop" href="@Url.Action("Index", "Promociones")">REPORTES</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a class="menu-li-a-drop" href="javascript:void(0)">ALMACEN<i class="fa fa-angle-right fa-indicator"></i></a>
+                                            <ul class="drop-down-multilevel left-side effect-fade">
+                                                <li><a class="menu-li-a-drop" href="@Url.Action("Index", "Promociones")">PRODUCTOS</a></li>
+                                                <li><a class="menu-li-a-drop" href="@Url.Action("Index", "Promociones")">Event-detail</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li> <a class="menu-style menu-li-a @(lnombreCntrolador.Equals("Nosotros") ? "active" : string.Empty)" href="@Url.Action("Index", "Nosotros")"> NOSOTROS</a></li>
+                                <li><a class="menu-style menu-li-a @(lnombreCntrolador.Equals("Contacto") ? "active" : string.Empty)" href="@Url.Action("Index", "Contacto")"> CONTACTO</a></li>
+                                <li><a class="menu-book-table-btn btn-bg" href="book-party.html" style="padding:8px 20px; line-height:30px; margin-top:10px; color:#FFF; margin-bottom:8px;">RECARGAS CASH</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </nav>
+    </div>
+</header>
+
+<!---------------Encabezado--------------->
+@if (!lnombreCntrolador.Equals("Home"))
+{
+    <div class="container-fluid contact-head-bg">
+        <div class="contact-head-bg-black">
+            <div class="container text-center">
+                <h2>@lnombreCntrolador</h2>
+                <span style="text-transform:uppercase"><a href="index.html">HOME &nbsp; ></a> &nbsp; @lnombreCntrolador</span>
+            </div>
+        </div>
+    </div>
+}

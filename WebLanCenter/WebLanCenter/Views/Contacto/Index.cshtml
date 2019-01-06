@@ -1,0 +1,96 @@
+﻿@{
+    ViewBag.Title = "Lan Center Ale - Contacto";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-------------contact-head---------->
+<div class="container-fluid" style="padding:0;">
+    <div class="contact-page-left">
+
+        <div class="col-md-offset-2 col-md-10 contact-page-left-padd">
+
+            <h3 class="welc-h3">¿CÓMO PODEMOS AYUDAR?</h3>
+            <span class="testimonial-under" style="width:130px; margin-bottom:10px;"></span>
+
+            <div class="col-md-12" style="margin-top:20px;padding:0;">
+
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 input-top">
+                        <input type="text" placeholder="Nombres" class="contact-page-box">
+                    </div>
+                    <div class="col-sm-6 col-md-6 input-top">
+                        <input type="text" placeholder="Apellidos" class="contact-page-box">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 input-top">
+                        <input type="email" placeholder="Email" class="contact-page-box">
+                    </div>
+                    <div class="col-sm-6 col-md-6 input-top">
+                        <input type="tel" placeholder="Teléfono" class="contact-page-box">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 input-top">
+                        <textarea placeholder="Mensaje" class="contact-page-message"></textarea>
+                    </div>
+                </div>
+
+
+                <a href="#" class="contact-page-submit">ENVIAR</a>
+                <div class="clearfix"></div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <div class="contact-page-right">
+
+        <div class="col-md-offset-1 col-md-11 contact-page-left-padd">
+
+            <h3 class="welc-h3">INFORMACIÓN DE CONTACTO</h3>
+            <span class="testimonial-under" style="width:130px; margin-bottom:30px;"></span>
+
+            <div class="location contact-page-right-loc-padd">
+                <div class="contact-loc"><i class="flaticon-placeholder" aria-hidden="true"></i></div>
+                <span>Av. San Martin Mz. K LT. 25 Valle Saron,<br /> San Juan de Lurigancho, Lima, Perú.</span>
+            </div>
+            <div class="line contact-page-line"></div>
+
+            <div class="cal contact-page-right-loc-padd">
+                <div class="contact-cal"><i class="flaticon-phone-call" aria-hidden="true"></i></div>
+                <span>Teléfono</span><br />(01) 650 4729
+            </div>
+            <div class="line contact-page-line"></div>
+
+            <div class="location contact-page-right-loc-padd">
+                <div class="contact-mail"><i class="flaticon-envelope" aria-hidden="true"></i></div>
+                <span style="line-height:47px;">lancenterale@gmail.com</span>
+            </div>
+            <div class="line contact-page-line"></div>
+
+            <div class="location contact-page-right-loc-padd">
+                <div class="contact-time"><i class="flaticon-clock" aria-hidden="true"></i></div>
+                <span>
+                    <b>Lunes a Sábado </b>: 9am - 9pm<br />
+                    Domingo : 9am - 7pm<br />
+                </span>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+<!-------------Newslatter-------------->
+@{ Html.RenderPartial("_NewsLetter"); }
+
+<!---------------Contact--------------->
+@{ Html.RenderPartial("_Contacto"); }

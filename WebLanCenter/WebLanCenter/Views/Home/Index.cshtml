@@ -1,0 +1,144 @@
+﻿@{
+    ViewBag.Title = "Lan Center Ale";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Sidebar -->
+@{ Html.RenderPartial("_SliderBar"); }
+<!-- sidebar Fin -->
+
+<div class="container-fluid" style="background-image:url(images/welcome-bg.jpg); background-repeat:no-repeat;">
+    <div class="container about-sec">
+        <div class="col-md-1"></div>
+        <div class="col-md-5 padd-50">
+            <h2 class="welc-h2">BIENVENIDOS</h2>
+            <div class="h2-underline"></div>
+            <h3 class="welc-h3">JUEGOS ONLINE<br>RECARGAS DE CASH.</h3>
+        </div>
+        <div class="col-md-5 padd-50" style="padding-right:50px;">
+            <h2 class="story-h2">Calidad de Servicio</h2>
+            <p class="story-p">Tenemos un ambiente comodo y acogedor, podras disfrutar de tus juegos en linea sin ningun problema, maquinas potentes con alta capacidad y un internet de alta velocidad...</p>
+            <div class="read-more text-center"><a href="about-us.html"><img src="images/read-ball.png" / style="margin-top:15px;"><br /><span>Leer<br /> más</span></a></div>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="container">
+        <div class="col-xs-12 col-md-1"></div>
+        <div class="col-xs-12 col-md-10 top-sec">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-4 box-1 text-center">
+                    <h2 class="welc-h2" style="color:#FFF;">ZONA JUEGOS</h2>
+                    <p>Muchos juegos disponibles...</p><span class="perspective"><a href="bowling.html" class="btn-2 btn-8 btn-8a">Ver</a></span> <img src="images/box-1-ball.html" />
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-4" style="padding:0;"><img src="images/box-2.jpg" class="img-responsive" /></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-8 box-2 text-center">
+                    <h2 class="welc-h2" style="color:#FFF; margin-bottom:15px;">Parties & Events</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipi scing elit. Sed a ligula in velit..</p><br /> <span class="perspective"><a href="contact.html" class="btn-2 btn-8 btn-8a">BOOK NOW</a></span> <img src="images/box-2-glas.html" />
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4" style="padding:0;"><img src="images/box-3.jpg" class="img-responsive" /></div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-1"></div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+<div class="container-fluid padd-70">
+    <div class="container">
+        <div class="col-md-12 text-center">
+            <h2 class="welc-h3" style="margin-bottom:10px;">Get Your Bowling On</h2><span class="testimonial-under"></span>
+        </div>
+        <div class="clearfix"></div>
+        <div class="col-xs-12 col-sm-6 col-md-4 text-center on">
+            <div class="block"><i class="flaticon-birthday-cake hovicon effect-3 sub-b"></i></div>
+            <h3 class="welc-h3" style="color:#262b2a; margin-bottom:10px;">BOOK A PARTY</h3> <span class="h3-underline"></span>
+            <p class="story-p" style="margin-top:10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a ligula in velit.</p><a href="contact.html" class="read-more text-center box-3-read-more"><img src="images/read-ball.png" / style="margin-top:15px;"><br /><span>BOOK<br /> NOW</span></a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 text-center on border">
+            <div class="block"><i class="flaticon-bowling-pin hovicon effect-3 sub-b"></i></div>
+            <h3 class="welc-h3" style="color:#262b2a; margin-bottom:10px;">BOOK A LANE</h3> <span class="h3-underline"></span>
+            <p class="story-p" style="margin-top:10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a ligula in velit.</p><a href="contact.html" class="read-more text-center box-1-read-more"><img src="images/read-ball.png" / style="margin-top:15px;"><br /><span>BOOK<br /> NOW</span></a>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 text-center on">
+            <div class="block"><i class="flaticon-gallery hovicon effect-3 sub-b"></i></div>
+            <h3 class="welc-h3" style="color:#262b2a; margin-bottom:10px;">VIEW GALLERY</h3> <span class="h3-underline"></span>
+            <p class="story-p" style="margin-top:10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a ligula in velit.</p><a href="gallery.html" class="read-more text-center box-1-read-more box-2-read-more"><img src="images/read-ball.png" / style="margin-top:15px;"><br /><span style="color:#FFF;">VIEW<br /> GALLERy</span></a>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+<!-- Muro -->
+@{ Html.RenderPartial("_Muro"); }
+<!-- Muro Fin-->
+
+<div class="container-fluid padd-50" style="background-image:url(images/welcome-bg.jpg); background-repeat:no-repeat;">
+    <div class="container">
+        <div class="col-md-12 text-center">
+            <h2 class="welc-h3">TESTIMONIALS</h2> <span class="testimonial-under"></span>
+        </div>
+        <div class="clearfix"></div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div id="testimonial-slider" class="owl-carousel">
+                    <div class="testimonial">
+                        <div class="pic"> <img src="images/testimonial-1.jpg" alt=""> </div>
+                        <p class="description"> “Pellentesque congue nisi quis nisi ullamcorper sollicitudin. Duis hendrerit, magna ornare dapibus, nulla ipsum iaculis nisl, a malesuada arcu quam ut dolor. Fusce dolor erat, eget lobortis eget, hendrerit vel turpis. Mauris accumsan at nibh a lacinia. dit mauris quam, nec commodo dui tincidunt in” </p>
+                        <h3 class="testimonial-title"> - Natasha Mascara</h3>
+                    </div>
+                    <div class="testimonial">
+                        <div class="pic"> <img src="images/testimonial-2.jpg" alt=""> </div>
+                        <p class="description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam enim diam, tempus vel ultricies viverra, luctus in elit. Aliquam tempus blandit velit, in pharetra ex volutpat a. Cras eu augue ac nisl tempor commodo. </p>
+                        <h3 class="testimonial-title"> - Lucius Cashmere</h3>
+                    </div>
+                    <div class="testimonial">
+                        <div class="pic"> <img src="images/testimonial-3.jpg" alt=""> </div>
+                        <p class="description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam enim diam, tempus vel ultricies viverra, luctus in elit. Aliquam tempus blandit velit, in pharetra ex volutpat a. Cras eu augue ac nisl tempor commodo. </p>
+                        <h3 class="testimonial-title"> - Jesse Phoenix</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Sidebar Horizontal -->
+@{ Html.RenderPartial("_SliderHorizontal"); }
+<!-- Sidebar Horizontal Fin -->
+
+
+<div class="container-fluid paralex">
+    <div class="container">
+        <div class="col-md-12 text-center">
+            <h2 class="welc-h3" style="color:#FFF; margin-bottom:0;">BOOK A PARTY</h2> <span class="contact-underline"></span>
+            <p>Let, consectetur adipiscing elit. Vestibu lum porttitor egestas orci, vitae ullamcorper risus consett velit vestibulum, rutru.</p>
+        </div>
+        <div class="clearfix"></div>
+        <div class="col-md-2"></div>
+        <div class="col-md-8" style="margin-top:20px;">
+            <div class="col-sm-6 col-md-6 input-top"> <input type="text" placeholder="First Name" class="input-box"> </div>
+            <div class="col-sm-6 col-md-6 input-top"> <input type="text" placeholder="Last Name" class="input-box"> </div>
+            <div class="clearfix"></div>
+            <div class="col-sm-6 col-md-6 input-top"> <input type="email" placeholder="Enter Your Email" class="input-box"> </div>
+            <div class="col-sm-6 col-md-6 input-top"> <input type="tel" placeholder="Enter Your Phone" class="input-box"> </div>
+            <div class="clearfix"></div>
+            <div class="col-sm-6 col-md-6 input-top"> <input id="example1" class="date-pick input-box" placeholder="Date" type="text"> </div>
+            <div class="col-sm-6 col-md-6 input-top"> <input type="number" placeholder="Anticipated Number of People" class="input-box"> </div>
+            <div class="clearfix"></div>
+            <div class="col-md-12 input-top"> <textarea placeholder="Message" class="input-message"></textarea> </div>
+            <div class="clearfix"></div>
+            <div class="col-md-12 text-center input-top"> <a href="#" class="input-submit">SUBMIT</a> </div>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+
+<!-- Sidebar Horizontal -->
+@{ Html.RenderPartial("~/Views/Contacto/_NewsLetter.cshtml"); }
